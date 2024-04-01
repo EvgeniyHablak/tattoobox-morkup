@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Home 1</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+
+    <!-- Minified styles -->
+    <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
+    <a class="logo" href="/" title="Back to main"></a>
+    <a class="contacts-link" href="{{ route('contacts') }}" title="Contacts"></a>
+    <div class="home-1 overlay">
+        <div class="wrapper-home-1">
+            <h1 class="wrapper-home-1__title">“Show me a man with a tattoo and I'll show you a man with an interesting
+                past.”
+            </h1>
+            <p class="wrapper-home-1__author">― Jack London</p>
+        </div>
+    </div>
+    <nav class="nav-panel js-nav-panel">
+        <div class="nav-panel__table-socials js-nav-panel__socials">
+
+            <ul class="nav-panel__socials ">
+                <li class="nav-panel__socials-item">
+                    <a class="nav-panel__socials-link" href="#">
+                        <i class="fa fa-instagram nav-panel__socials-icon" aria-hidden="true"></i>
+                    </a>
+                </li>
+                <li class="nav-panel__socials-item">
+                    <a class="nav-panel__socials-link" href="#">
+                        <i class="fa fa-facebook nav-panel__socials-icon" aria-hidden="true"></i>
+                    </a>
+                </li>
+                <li class="nav-panel__socials-item">
+                    <a class="nav-panel__socials-link" href="#">
+                        <i class="fa fa-paper-plane-o nav-panel__socials-icon" aria-hidden="true"></i>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <div class="nav-panel__table-menu js-nav-panel__menu">
+            <ul class="nav-panel__menu ">
+                <li class="nav-panel__menu-item">
+                    <a class="nav-panel__menu-link" href="#">About</a>
+                </li>
+                <li class="nav-panel__menu-item">
+                    <a class="nav-panel__menu-link" href="{{ route('gallery.index') }}">Gallery</a>
+                </li>
+                <li class="nav-panel__menu-item">
+                    <a class="nav-panel__menu-link" href="{{ route('service.index') }}">Service</a>
+                </li>
+                <li class="nav-panel__menu-item">
+                    <a class="nav-panel__menu-link" href="#">Pricing</a>
+                </li>
+                <li class="nav-panel__menu-item">
+                    <a class="nav-panel__menu-link" href="{{ route('faq.index') }}">FAQ</a>
+                </li>
+            </ul>
+        </div>
+        <div class="nav-panel__booking-button js-booking-button">
+            <span class="nav-panel__booking-button-text">Book Appointment
+                <span class="triangle triangle-active"></span>
+            </span>
+            <span class="nav-panel__booking-button-icon">
+                <i class="fa fa-calendar-plus-o" aria-hidden="true"></i>
+                <span class="triangle triangle-active"></span>
+            </span>
+        </div>
+    </nav>
+    <div class="booking-wrapper  js-booking-wrapper">
+        <div class="booking-wrapper__successful-sent form-success-sent js-successful-sent-form">
+            <div class="booking-wrapper__successful-close js-successful-close-form"></div>
+            <p class="booking-wrapper__successful-text">
+                Your form successfully send.<br> Thank you!
+            </p>
+        </div>
+        <h3 class="booking-wrapper__title">Contact Us</h3>
+        <form action="{{ route('contactUs') }}" class="form-booking" method="POST">
+            <label class="form-label form-booking__label" for="form-booking__field">
+                <input autocomplete="off" type="text" placeholder="Phone" id="form-booking__field" name="phone_number"
+                    class="form-booking__field" />
+            </label>
+            <label class="form-label form-booking__label" for="form-booking__field">
+                <input type="email" placeholder="Email" name="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$"
+                    autocomplete="off" class="form-booking__field" />
+            </label>
+            <label class="form-label form-booking__label" for="form-booking__field">
+                <textarea name="message" placeholder="Message"
+                    class="form-booking__field form-booking__field-textarea"></textarea>
+            </label>
+            <button type="submit" class="button submit">Send</button>
+        </form>
+    </div>
+    <script src="js/app.js"></script>
+</body>
+
+</html>

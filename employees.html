@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Home 1</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+
+    <!-- Minified styles -->
+    <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
+    <a class="logo" href="/" title="Back to main"></a>
+    <a class="contacts-link" href="{{ route('contacts') }}" title="Contacts"></a>
+    <div class="gallery overlay">
+        <div class="gallery__wrapper">
+            <div class="gallery__wrapper-title title-main">Gallery</div>
+            <!-- @if(count($galleries))  -->
+            <!-- @foreach ($galleries as $gallery) -->
+            <!-- <div class="js-gallery__swiper">
+                <div class="swiper-wrapper">
+                    <a href="{{ route('gallery.show',['gallery' => $gallery->id]) }}" class="swiper-slide">
+                        <div class="gallery__wrapper-placehover">
+                            <span class="gallery__wrapper-placehover-text">Vlad Zeva</span>
+                        </div>
+                        <img class="gallery__wrapper-image" src="https://www.format.com/wp-content/uploads/Tattoo_ARtist-scaled.jpg"
+                            alt="{{ $gallery->user->name }} gallery">
+                    </a>
+                </div>
+            </div> -->
+            <div class="js-gallery__swiper">
+                <div class="swiper-wrapper">
+                    <a href="{{ route('gallery.show',['gallery' => $gallery->id]) }}" class="swiper-slide">
+                        <div class="gallery__wrapper-placehover">
+                            <span class="gallery__wrapper-placehover-text">Yevhenii Khablak</span>
+                        </div>
+                        <img class="gallery__wrapper-image" src="https://lh5.googleusercontent.com/proxy/EmLDi-Q77RM7hgXatk01ew2c6643TIWl03G7olkGEp7NQwlGbCZ3Pkkd_wLhoDKta1FQI_w-Va5lt2EAy-CWKJFxss-g2n8gxD1akBVKy6UZBUjtx4yRIVGztU4S5_xG"
+                            alt="{{ $gallery->user->name }} gallery">
+                    </a>
+                    <a href="{{ route('gallery.show',['gallery' => $gallery->id]) }}" class="swiper-slide">
+                        <div class="gallery__wrapper-placehover">
+                            <span class="gallery__wrapper-placehover-text">Vlad Zeva</span>
+                        </div>
+                        <img class="gallery__wrapper-image" src="https://www.format.com/wp-content/uploads/Tattoo_ARtist-scaled.jpg"
+                            alt="{{ $gallery->user->name }} gallery">
+                    </a>
+                    <a href="{{ route('gallery.show',['gallery' => $gallery->id]) }}" class="swiper-slide">
+                        <div class="gallery__wrapper-placehover">
+                            <span class="gallery__wrapper-placehover-text">Olha Bondar</span>
+                        </div>
+                        <img class="gallery__wrapper-image" src="https://media.npr.org/assets/img/2018/04/13/tattoo-img_2641_custom-a08b5858a2d0da179e8dba9a1683e89aa506c487.jpg"
+                            alt="{{ $gallery->user->name }} gallery">
+                    </a>
+                    <a href="{{ route('gallery.show',['gallery' => $gallery->id]) }}" class="swiper-slide">
+                        <div class="gallery__wrapper-placehover">
+                            <span class="gallery__wrapper-placehover-text">Den Ivanchenko</span>
+                        </div>
+                        <img class="gallery__wrapper-image" src="https://inkppl.com/en/assets/components/phpthumbof/cache/14240991_582292375291933_6984666444583665664_n%20%282%29.fe73b8e2a6e122d3071a30c94c5898a3.jpg"
+                            alt="{{ $gallery->user->name }} gallery">
+                    </a>
+
+                </div>
+            </div>
+            <!-- @endforeach -->
+            <!-- @else
+        <p>No galleries yet</p>
+        @endif -->
+        </div>
+    </div>
+    <nav class="nav-panel js-nav-panel">
+        <div class="nav-panel__table-socials js-nav-panel__socials">
+
+            <ul class="nav-panel__socials ">
+                <li class="nav-panel__socials-item">
+                    <a class="nav-panel__socials-link" href="#">
+                        <i class="fa fa-instagram nav-panel__socials-icon" aria-hidden="true"></i>
+                    </a>
+                </li>
+                <li class="nav-panel__socials-item">
+                    <a class="nav-panel__socials-link" href="#">
+                        <i class="fa fa-facebook nav-panel__socials-icon" aria-hidden="true"></i>
+                    </a>
+                </li>
+                <li class="nav-panel__socials-item">
+                    <a class="nav-panel__socials-link" href="#">
+                        <i class="fa fa-paper-plane-o nav-panel__socials-icon" aria-hidden="true"></i>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <div class="nav-panel__table-menu js-nav-panel__menu">
+            <ul class="nav-panel__menu ">
+
+                <li class="nav-panel__menu-item">
+                    <a class="nav-panel__menu-link" href="#">About</a>
+                </li>
+                <li class="nav-panel__menu-item">
+                    <a class="nav-panel__menu-link" href="{{ route('gallery.index') }}">Gallery</a>
+                </li>
+                <li class="nav-panel__menu-item">
+                    <a class="nav-panel__menu-link" href="{{ route('service.index') }}">Service</a>
+                </li>
+
+                <li class="nav-panel__menu-item">
+                    <a class="nav-panel__menu-link" href="#">Pricing</a>
+                </li>
+                <li class="nav-panel__menu-item">
+                    <a class="nav-panel__menu-link" href="{{ route('faq.index') }}">FAQ</a>
+                </li>
+            </ul>
+        </div>
+        <div class="nav-panel__booking-button js-booking-button">
+            <span class="nav-panel__booking-button-text">Book Appointment
+                <span class="triangle triangle-active"></span>
+            </span>
+            <span class="nav-panel__booking-button-icon">
+                <i class="fa fa-calendar-plus-o" aria-hidden="true"></i>
+                <span class="triangle triangle-active"></span>
+            </span>
+        </div>
+    </nav>
+    <div class="booking-wrapper  js-booking-wrapper">
+        <div class="booking-wrapper__successful-sent form-success-sent js-successful-sent-form">
+            <div class="booking-wrapper__successful-close js-successful-close-form"></div>
+            <p class="booking-wrapper__successful-text">
+                Your form successfully send.<br> Thank you!
+            </p>
+        </div>
+        <h3 class="booking-wrapper__title">Contact Us</h3>
+        <form action="{{ route('contactUs') }}" class="form-booking" method="POST">
+            <label class="form-label form-booking__label" for="form-booking__field">
+                <input autocomplete="off" type="text" placeholder="Phone" id="form-booking__field" name="phone_number"
+                    class="form-booking__field" />
+            </label>
+            <label class="form-label form-booking__label" for="form-booking__field">
+                <input type="email" placeholder="Email" name="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$"
+                    autocomplete="off" class="form-booking__field" />
+            </label>
+            <label class="form-label form-booking__label" for="form-booking__field">
+                <textarea name="message" placeholder="Message"
+                    class="form-booking__field form-booking__field-textarea"></textarea>
+            </label>
+            <button type="submit" class="button submit">Send</button>
+        </form>
+    </div>
+    <script src="js/app.js"></script>
+</body>
+
+</html>
