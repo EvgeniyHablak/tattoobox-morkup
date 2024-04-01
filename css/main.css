@@ -4736,10 +4736,12 @@ a:active {
   display: table-cell;
   vertical-align: middle;
 }
-
+/* Used to be
+float: left;
+padding-left: 12.5%; */
 .nav-panel__menu-item {
-  float: left;
-  padding-left: 12.5%;
+  float: right;
+  padding-right: 12.5%;
 }
 
 .nav-panel__menu-item:nth-last-child {

@@ -14,40 +14,13 @@
 
 <body>
     <a class="logo" href="/" title="Back to main"></a>
-    <!-- <a class="contacts-link" href="{{ route('contacts') }}" title="Contacts"></a> -->
-
-
-    <div class="gallery overlay">
-        <div class="gallery__wrapper">
-            <div class="gallery__wrapper-title title-main">Vlad Zeva</div>
-            <div class="js-gallery__swiper">
-                <div class="swiper-wrapper">
-                    <a href="https://i.pinimg.com/236x/5d/01/b2/5d01b21df4ae90e4f89e31e26f4103a1.jpg" class="swiper-slide js-popup__carousel">
-                        <img class="gallery__wrapper-image" src="https://i.pinimg.com/236x/5d/01/b2/5d01b21df4ae90e4f89e31e26f4103a1.jpg" alt="{{ $image->alt }}">
-                    </a>
-                    <a href="https://images.template.net/wp-content/uploads/2015/08/Photo-Effects-Tattoo-Maker-PSD1.jpg" class="swiper-slide js-popup__carousel">
-                        <img class="gallery__wrapper-image" src="https://images.template.net/wp-content/uploads/2015/08/Photo-Effects-Tattoo-Maker-PSD1.jpg" alt="{{ $image->alt }}">
-                    </a>
-                    <a href="https://i.pinimg.com/736x/69/7f/c6/697fc6a9f523efe5cf6ed4d4eda088cc.jpg" class="swiper-slide js-popup__carousel">
-                        <img class="gallery__wrapper-image" src="https://i.pinimg.com/736x/69/7f/c6/697fc6a9f523efe5cf6ed4d4eda088cc.jpg" alt="{{ $image->alt }}">
-                    </a>
-                    <a href="https://www.theinkfactory.ie/wp-content/uploads/2020/01/The-Ink-Factory-Cool-Tattoos-10.jpg" class="swiper-slide js-popup__carousel">
-                        <img class="gallery__wrapper-image" src="https://www.theinkfactory.ie/wp-content/uploads/2020/01/The-Ink-Factory-Cool-Tattoos-10.jpg" alt="{{ $image->alt }}">
-                    </a>
-                    <a href="https://www.theinkfactory.ie/wp-content/uploads/2020/01/The-Ink-Factory-Cool-Tattoos-10.jpg" class="swiper-slide js-popup__carousel">
-                        <img class="gallery__wrapper-image" src="https://www.theinkfactory.ie/wp-content/uploads/2020/01/The-Ink-Factory-Cool-Tattoos-10.jpg" alt="{{ $image->alt }}">
-                    </a>
-                    <a href="https://i.pinimg.com/736x/69/7f/c6/697fc6a9f523efe5cf6ed4d4eda088cc.jpg" class="swiper-slide js-popup__carousel">
-                        <img class="gallery__wrapper-image" src="https://i.pinimg.com/736x/69/7f/c6/697fc6a9f523efe5cf6ed4d4eda088cc.jpg" alt="{{ $image->alt }}">
-                    </a>
-                    <a href="https://i.pinimg.com/236x/5d/01/b2/5d01b21df4ae90e4f89e31e26f4103a1.jpg" class="swiper-slide js-popup__carousel">
-                        <img class="gallery__wrapper-image" src="https://i.pinimg.com/236x/5d/01/b2/5d01b21df4ae90e4f89e31e26f4103a1.jpg" alt="{{ $image->alt }}">
-                    </a>
-                    <a href="https://images.template.net/wp-content/uploads/2015/08/Photo-Effects-Tattoo-Maker-PSD1.jpg" class="swiper-slide js-popup__carousel">
-                        <img class="gallery__wrapper-image" src="https://images.template.net/wp-content/uploads/2015/08/Photo-Effects-Tattoo-Maker-PSD1.jpg" alt="{{ $image->alt }}">
-                    </a>
-                </div>
-            </div>
+    <a class="contacts-link" href="{{ route('contacts') }}" title="Contacts"></a>
+    <div class="home-1 overlay">
+        <div class="wrapper-home-1">
+            <h1 class="wrapper-home-1__title">“Show me a man with a tattoo and I'll show you a man with an interesting
+                past.”
+            </h1>
+            <p class="wrapper-home-1__author">― Jack London</p>
         </div>
     </div>
     <nav class="nav-panel js-nav-panel">
@@ -90,7 +63,7 @@
                 </li>
             </ul>
         </div>
-        <!-- <div class="nav-panel__booking-button js-booking-button">
+        <div class="nav-panel__booking-button js-booking-button">
             <span class="nav-panel__booking-button-text">Book Appointment
                 <span class="triangle triangle-active"></span>
             </span>
@@ -98,7 +71,7 @@
                 <i class="fa fa-calendar-plus-o" aria-hidden="true"></i>
                 <span class="triangle triangle-active"></span>
             </span>
-        </div> -->
+        </div>
     </nav>
     <div class="booking-wrapper  js-booking-wrapper">
         <div class="booking-wrapper__successful-sent form-success-sent js-successful-sent-form">
@@ -124,7 +97,6 @@
             <button type="submit" class="button submit">Send</button>
         </form>
     </div>
-
     <script src="js/app.js"></script>
 </body>
 
