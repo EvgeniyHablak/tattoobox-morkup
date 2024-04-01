@@ -4191,13 +4191,13 @@ input:-webkit-autofill {
 }
 
 .custom-scroll-style::-webkit-scrollbar-track-piece {
-  background-color: #c4b773;
+  background-color: #e4c631;
   border-left: 1px solid #000000;
   border-right: 1px solid #000000;
 }
 
 .custom-scroll-style::-webkit-scrollbar-thumb {
-  background-color: #c4b773;
+  background-color: #e4c631;
 }
 
 input {
@@ -4367,7 +4367,7 @@ textarea:focus {
 
 .title-main:before {
   content: "";
-  background: #c4b773;
+  background: #e4c631;
   width: 7px;
   height: 15px;
   position: absolute;
@@ -5327,7 +5327,7 @@ padding-left: 12.5%; */
   font-size: 45px;
   line-height: 52px;
   letter-spacing: 0.025em;
-  color: #c4b773;
+  color: #e4c631;
   text-align: left;
   font-family: "OswaldLight", sans-serif;
   font-weight: normal;
